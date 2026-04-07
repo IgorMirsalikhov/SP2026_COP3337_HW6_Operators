@@ -1,10 +1,11 @@
 #include <iostream> 
 #include <string>  
 template<typename T> bool isGreater(const T* list1, const T* list2, int size1, int size2);  
-int main(void) {     // test example 1     int i_array1[5] = {1, 3, -3, 4, -5};     int
-          i_array2[3] = {42, 30, 6};     
-          std::cout  << isGreater(i_array1, i_array2,
-          5, 3) << std::endl;          
+int main(void) {    
+          // test example 1     
+          int i_array1[5] = {1, 3, -3, 4, -5};     
+          int i_array2[3] = {42, 30, 6};     
+          std::cout  << isGreater(i_array1, i_array2, 5, 3) << std::endl;          
           // test example 2     
           double d_array1[2] = {1.57, 3.14159};     
           double d_array2[4] = {1.57, 3.14159, -360, 3};     
