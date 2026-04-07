@@ -6,8 +6,8 @@
 #include <random>
 
 Deck::Deck(int shuffle_seed) : current_card(0), shuffle_seed(shuffle_seed) {
-    for(int i = 0; i < 4; i++){                      
-        for(int j = 0; j < 13; j++){                 
+    for(int i = 0; i < 13; i++){                      
+        for(int j = 0; j < 4; j++){                 
             deck.push_back(Card(i, j));        
         } 
     }
