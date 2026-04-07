@@ -11,8 +11,8 @@ int main(void) {
           double d_array2[4] = {1.57, 3.14159, -360, 3};     
           std::cout  << isGreater(d_array1, d_array2, 2, 4) << std::endl;          
           // test example
-          std::string s_array1[4] = {Hgh, Ojk, Lmnopq, Zyx};     
-          std::string s_array2[5] = {abcd, ab, adad, cat, fg};     
+          std::string s_array1[4] = {"Hgh", "Ojk", "Lmnopq", "Zyx"};     
+          std::string s_array2[5] = {"abcd", "ab", "adad", "cat", "fg"};        
           std::cout << isGreater(s_array1, s_array2, 4, 5) << std::endl; 
           return 0; 
 }
