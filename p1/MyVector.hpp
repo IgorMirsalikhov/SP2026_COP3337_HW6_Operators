@@ -1,6 +1,8 @@
 #ifndef MYVECTOR_HPP
 #define MYVECTOR_HPP
 
+#include <iostream>
+
 template <typename T>
 class MyVector {
 public:
