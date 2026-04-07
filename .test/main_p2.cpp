@@ -20,7 +20,6 @@ int main(void) {
     bool four_of_kind = false;
     bool flush = false;
     bool straight = false;
-    bool straight_flush = false;
     bool full_house = false;
 
     while (1) {
@@ -64,12 +63,6 @@ int main(void) {
             h.printHand();
             std::cout << std::endl;
         } 
-        if (!straight_flush && h.straightFlush()) {
-            straight_flush = true;
-            std::cout << "It took " << Hand::getHandsDealt() << " hands to get a straight flush" << std::endl;
-            h.printHand();
-            std::cout << std::endl;
-        } 
         if (!full_house && h.fullHouse()) {
             full_house = true;
             std::cout << "It took " << Hand::getHandsDealt() << " hands to get a full house" << std::endl;
@@ -77,7 +70,7 @@ int main(void) {
             std::cout << std::endl;
         } 
         if (    pair && two_pair && three_of_kind && four_of_kind &&
-                flush && straight && straight_flush && full_house) {
+                flush && straight && full_house) {
             break;
         }
         h.getNewHand(myDeck);
